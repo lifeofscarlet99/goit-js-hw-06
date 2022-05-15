@@ -23,7 +23,7 @@ button {
   cursor: pointer;
 }
 
-.gallery__list-img {
+/* .gallery__list-img {
   margin-right: 50px;
   list-style: none;
 }
@@ -31,4 +31,12 @@ button {
 .galery-list {
   display: flex;
   justify-content: center;
+} */
+.gallery {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.gallery img {
+  margin-right: 40px;
 }

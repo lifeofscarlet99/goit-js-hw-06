@@ -26,7 +26,11 @@ function onSubmitForm(event) {
   if (email.value === "" || password.value === "") {
     alert(" Все поля должны быть заполнены!");
   }
-  console.log(`Email: ${email.value}, Password: ${password.value}`);
+  if (password.value.length <= 8) {
+    alert("Длинна пароля должна быть более 8 символов");
+  }
+  // console.log(`Email: ${email.value}, Password: ${password.value}`);
+  console.log({ [email.name]: email.value, [password.name]: password.value });
   event.currentTarget.reset();
 }
 
